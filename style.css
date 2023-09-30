@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: aliceblue;
+    color: #444;
+    font-size: 1.3rem;
+}
+
+table {
+    background-color: white;
+    margin: 100px auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+/* tr:nth-child(even) {
+    background-color: whitesmoke;
+} */
+
+tbody tr:nth-child(odd) {
+    background-color: whitesmoke;
+}
+
+tbody tr td:nth-child(4) {
+    text-align: right;
+}
+
+tbody tr td:nth-child(5) {
+    text-align: right;
+}
+
+tbody tr td:nth-child(3) {
+    text-align: center;
+}
+
+tbody tr td:first-child {
+    color: royalblue;
+}
+
+tbody tr td:last-child{
+    display: inline-block;
+    background-color: lightseagreen;
+    padding: 3px 8px;
+    margin: 15px auto;
+    border-radius: 8px;
+    color: white;
+}
+
+th, td {
+    letter-spacing: 2px;
+    padding: 20px
+}
+
+th {
+    text-transform: uppercase;
+}
+
+.not-received td:last-child {
+    background-color: orangered;
+    color: white;
+}
+
+.under-shipment td:last-child {
+    background-color: crimson;
+    color: white;
+}
